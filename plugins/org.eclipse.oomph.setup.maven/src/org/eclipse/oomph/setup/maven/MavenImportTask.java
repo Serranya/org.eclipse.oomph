@@ -26,6 +26,7 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link org.eclipse.oomph.setup.maven.MavenImportTask#getSourceLocators <em>Source Locators</em>}</li>
  *   <li>{@link org.eclipse.oomph.setup.maven.MavenImportTask#getProjectNameTemplate <em>Project Name Template</em>}</li>
+ *   <li>{@link org.eclipse.oomph.setup.maven.MavenImportTask#getProfiles <em>Profiles</em>}</li>
  * </ul>
  *
  * @see org.eclipse.oomph.setup.maven.MavenPackage#getMavenImportTask()
@@ -76,5 +77,31 @@ public interface MavenImportTask extends SetupTask
    * @generated
    */
   void setProjectNameTemplate(String value);
+
+  /**
+   * Returns the value of the '<em><b>Profiles</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Profiles</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Profiles</em>' attribute.
+   * @see #setProfiles(String)
+   * @see org.eclipse.oomph.setup.maven.MavenPackage#getMavenImportTask_Profiles()
+   * @model
+   * @generated
+   */
+  String getProfiles();
+
+  /**
+   * Sets the value of the '{@link org.eclipse.oomph.setup.maven.MavenImportTask#getProfiles <em>Profiles</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Profiles</em>' attribute.
+   * @see #getProfiles()
+   * @generated
+   */
+  void setProfiles(String value);
 
 } // MavenImportTask
